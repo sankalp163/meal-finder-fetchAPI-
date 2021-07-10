@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+body{
+    background-color: rgb(31, 30, 30);
+}
+
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+    min-height: 100vh;
+    .meal-wrapper {
+        margin: 0 auto;
+        text-align: center;
+        .meal-search{
+            margin: 4rem 0;
+            font-size: 2rem;
+            cite{
+                font-size: 1rem;
+            }
+            .meal-search-bar{
+                width: 90%;
+                max-width: 400px;
+                margin: 3.2rem auto;
+                
+                .search-control{
+                    width: 90%;
+                    background-color: rgb(206, 201, 201);
+                    color: rgb(53, 52, 52) ;
+                    padding: 6px 20px;
+                    outline: none;
+                    border: none;
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    border-bottom-left-radius: 100px;
+                    border-top-left-radius: 100px;
+                }
+                .search-btn{
+                    background-color: transparent;
+                    width: 11%;
+                    margin: -9px;
+                    font-size: 1.85rem;
+                    i{
+                        font-size: 1.6rem;
+                        transition: all 0.2s ease-in-out;
+                        &:hover{
+                            color: rgb(138, 136, 136);
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        #meal{
+
+            margin-top: 2rem;
+            width: 100%;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+            .meal-item {
+                width: 100%;
+                border-radius:10px;
+                background-color: rgb(65, 63, 63);
+                padding: 20px;
+                overflow: hidden;
+                .meal-img img {
+                    width: 100%;
+                    height: 300px;
+                }
+                .meal-name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    .recipe-btn{
+                        text-decoration: none;
+                        text-align: center;
+                        width: 100px;
+                        padding: 10px;
+                        background-color: rgb(31, 30, 30); 
+                        border-radius: 10px;
+                        transition: all 0.2s ease-in-out;
+                        &:hover{
+                            background-color:white;
+                            color: rgb(31, 30, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

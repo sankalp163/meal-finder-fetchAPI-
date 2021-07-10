@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  background-color: #1f1e1e;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+
+.text {
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.container .meal-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .meal-wrapper .meal-search {
+  margin: 4rem 0;
+  font-size: 2rem;
+}
+
+.container .meal-wrapper .meal-search cite {
+  font-size: 1rem;
+}
+
+.container .meal-wrapper .meal-search .meal-search-bar {
+  width: 90%;
+  max-width: 400px;
+  margin: 3.2rem auto;
+}
+
+.container .meal-wrapper .meal-search .meal-search-bar .search-control {
+  width: 90%;
+  background-color: #cec9c9;
+  color: #353434;
+  padding: 6px 20px;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+.container .meal-wrapper .meal-search .meal-search-bar .search-btn {
+  background-color: transparent;
+  width: 11%;
+  margin: -9px;
+  font-size: 1.85rem;
+}
+
+.container .meal-wrapper .meal-search .meal-search-bar .search-btn i {
+  font-size: 1.6rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .meal-wrapper .meal-search .meal-search-bar .search-btn i:hover {
+  color: #8a8888;
+}
+
+.container .meal-wrapper #meal {
+  margin-top: 2rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .meal-wrapper #meal .meal-item {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #413f3f;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container .meal-wrapper #meal .meal-item .meal-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.container .meal-wrapper #meal .meal-item .meal-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.container .meal-wrapper #meal .meal-item .meal-name .recipe-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  background-color: #1f1e1e;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .meal-wrapper #meal .meal-item .meal-name .recipe-btn:hover {
+  background-color: white;
+  color: #1f1e1e;
+}
+/*# sourceMappingURL=style.css.map */
